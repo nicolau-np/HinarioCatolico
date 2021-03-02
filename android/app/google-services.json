@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "393497245034",
+    "project_id": "hinariocatolico",
+    "storage_bucket": "hinariocatolico.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393497245034:android:367a5cbd85d0919570e113",
+        "android_client_info": {
+          "package_name": "com.example.hinario_catolico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393497245034-35p7pn2k48a8oc675htqdrd4425vd6v0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlVEMWSG1LtcId6ixpQqw7jehrhfcEeV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393497245034-35p7pn2k48a8oc675htqdrd4425vd6v0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
