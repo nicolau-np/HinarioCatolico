@@ -15,17 +15,36 @@ class DrawerScreen extends StatelessWidget {
               fit: BoxFit.contain,
             ),
           ),
-          
           ListTile(
             leading: Icon(Icons.favorite),
-            title: Text("Favoritos"),
+            title: Text("Orações"),
+            onTap: () {
+              Navigator.of(context).pushNamed('/oracoes');
+            },
           ),
           ListTile(
             leading: Icon(Icons.music_note),
-            title: Text("Exercício de Canto"),
+            title: Text("Cânticos"),
+            onTap: () {
+              Navigator.of(context).pushNamed('/canticos');
+            },
           ),
           Divider(
             color: Colors.black54,
+          ),
+          ListTile(
+            leading: Icon(Icons.settings),
+            title: Text("Configurações"),
+            onTap: () {
+              Navigator.of(context).pushNamed('/configuracoes');
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.help),
+            title: Text("Suporte"),
+            onTap: () {
+              Navigator.of(context).pushNamed('/suporte');
+            },
           ),
         ],
       ),
