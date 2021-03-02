@@ -7,18 +7,25 @@ class DrawerScreen extends StatelessWidget {
       child: Column(
         children: [
           Container(
+            height: 150.0,
+            width: 500,
             color: Colors.red,
-            child: CircleAvatar(
-              
+            child: Image.asset(
+              'assets/orante.png',
+              fit: BoxFit.contain,
             ),
           ),
+          
           ListTile(
-            leading: Icon(Icons.home),
-            title: Text("Home"),
+            leading: Icon(Icons.favorite),
+            title: Text("Favoritos"),
           ),
           ListTile(
-            leading: Icon(Icons.circle),
-            title: Text("Acount"),
+            leading: Icon(Icons.music_note),
+            title: Text("Exercício de Canto"),
+          ),
+          Divider(
+            color: Colors.black54,
           ),
         ],
       ),
