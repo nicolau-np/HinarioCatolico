@@ -9,9 +9,27 @@ class HomePage extends StatelessWidget {
         title: Text('Hinário Católico'),
       ),
       drawer: DrawerScreen(),
-      body: Center(
-        child: Text('heloo'),
-      ),
+      body: Column(children: [
+        SizedBox(
+          height: 10,
+        ),
+        Container(
+          child: Text("Frase do dia"),
+        ),
+        Container(
+          child: Text("Galeria"),
+        ),
+        Row(
+          children: [
+            Container(
+              child: Text("hello1"),
+            ),
+            Container(
+              child: Text("hello2"),
+            )
+          ],
+        ),
+      ]),
     );
   }
 }
