@@ -10,10 +10,22 @@ class DrawerScreen extends StatelessWidget {
             height: 150.0,
             width: 500,
             color: Colors.red,
-            child: Image.asset(
-              'assets/orante.png',
-              fit: BoxFit.contain,
+            child: InkWell(
+              child: Image.asset(
+                'assets/orante.png',
+                fit: BoxFit.contain,
+              ),
+              onTap: () {
+                Navigator.of(context).pushNamed('/home');
+              },
             ),
+          ),
+          ListTile(
+            leading: Icon(Icons.home),
+            title: Text("Principal"),
+            onTap: () {
+              Navigator.of(context).pushNamed('/home');
+            },
           ),
           ListTile(
             leading: Icon(Icons.favorite),

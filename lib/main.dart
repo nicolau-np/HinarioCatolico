@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:hinario_catolico/screens/canticos.dart';
+import 'package:hinario_catolico/screens/configuracoes.dart';
 import 'package:hinario_catolico/screens/home_page.dart';
+import 'package:hinario_catolico/screens/oracoes.dart';
+import 'package:hinario_catolico/screens/suporte.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Hinário Católico',
       theme: ThemeData(
         primarySwatch: Colors.red,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -19,6 +23,10 @@ class MyApp extends StatelessWidget {
       initialRoute: '/home',
       routes: {
         '/home': (context) => HomePage(),
+        '/oracoes': (context) => OracoesPage(),
+        '/canticos': (context) => CanticosPage(),
+        '/configuracoes': (context) => ConfigPage(),
+        '/suporte': (context) => SuportePage(),
       },
     );
   }
