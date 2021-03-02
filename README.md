@@ -1,8 +1,8 @@
 # hinario_catolico
 
-A new Flutter project.
+Hinário Católico, canticos e orações 
 
-## Getting Started
+## Sobre
 
 This project is a starting point for a Flutter application.
 
