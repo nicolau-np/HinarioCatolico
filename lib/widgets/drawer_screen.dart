@@ -6,7 +6,20 @@ class DrawerScreen extends StatelessWidget {
     return Drawer(
       child: Column(
         children: [
-          
+          Container(
+            color: Colors.red,
+            child: CircleAvatar(
+              
+            ),
+          ),
+          ListTile(
+            leading: Icon(Icons.home),
+            title: Text("Home"),
+          ),
+          ListTile(
+            leading: Icon(Icons.circle),
+            title: Text("Acount"),
+          ),
         ],
       ),
     );
