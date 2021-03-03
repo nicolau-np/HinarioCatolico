@@ -30,6 +30,7 @@ dependencies:
   cupertino_icons: ^0.1.3
   cloud_firestore: ^0.13.6
   carousel_pro: ^1.0.0
+  
 
 dev_dependencies:
   flutter_test:
