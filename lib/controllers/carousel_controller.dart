@@ -10,11 +10,11 @@ class CarouselController extends ChangeNotifier {
   List<CarouselModel> lista = [];
   final Firestore firestore = Firestore.instance;
 
-  int countSlider() {
+  int countCarousel() {
     return lista.length;
   }
 
-  Future<void> getCarousel() async {
+  Future<CarouselModel> getCarousel() async {
     final getLista = await firestore.collection("carousel").getDocuments();
     lista =
         getLista.documents.map((e) => (CarouselModel.fromDocument(e))).toList();
