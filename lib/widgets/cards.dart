@@ -65,7 +65,11 @@ class CardsWidget extends StatelessWidget {
                   )),
               Center(
                 child: RaisedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushNamed('/descricao_noticia', arguments: {
+                      'title':this.title
+                    });
+                  },
                   child: Text("Ler mais"),
                   color: Colors.red,
                   textColor: Colors.white,
