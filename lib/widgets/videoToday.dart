@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
-
-class VideoToday extends StatelessWidget {
+class VideoToday extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
+  _VideoTodayState createState() => _VideoTodayState();
+}
+
+class _VideoTodayState extends State<VideoToday> {
+  @override
+   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
