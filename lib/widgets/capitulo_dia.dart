@@ -12,6 +12,7 @@ class CapituloDia extends StatelessWidget {
               color: Colors.black87,
               fontSize: 15,
             ),
+            textAlign: TextAlign.center,
           ),
         ),
         Container(

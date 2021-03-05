@@ -9,8 +9,8 @@ class SuportePage extends StatelessWidget {
         title: Text('Suporte'),
       ),
       drawer: DrawerScreen(),
-      body: Center(
-        child: Text('heloo'),
+      body: Container(
+        
       ),
     );
   }
