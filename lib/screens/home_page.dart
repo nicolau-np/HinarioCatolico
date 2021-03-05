@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Hinário'),
       ),
@@ -53,6 +53,9 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(
+              height: 10,
+            ),
             Container(
               width: double.infinity,
               color: Colors.white,
@@ -62,10 +65,12 @@ class HomePage extends StatelessWidget {
                   CircleButton(
                     'Orações',
                     'https://static.fnac-static.com/multimedia/Images/PT/NR/f6/3f/00/16374/1540-1.jpg',
+                    '/oracoes',
                   ),
                   CircleButton(
                     'Cânticos',
                     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDg-_okK1TsqtW0BX4XeqygY2ptMx96YPhkw&usqp=CAU',
+                    '/canticos'
                   ),
                 ],
               ),
