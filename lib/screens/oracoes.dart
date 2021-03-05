@@ -31,10 +31,11 @@ class OracoesPage extends StatelessWidget {
                 height: 525.0,
                 width: double.infinity,
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(5, 4, 5, 4),
+                  padding: const EdgeInsets.fromLTRB(0, 4, 0, 4),
                   child: ListView(
                     children: [
-                      CardsOracoes(),
+                      CardsOracoes('titulo','descricao',),
+                      
                     ],
                   ),
                 ),
