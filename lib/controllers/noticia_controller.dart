@@ -3,12 +3,11 @@ import 'package:flutter/foundation.dart';
 import 'package:hinario_catolico/models/noticia_model.dart';
 
 class NoticiaController extends ChangeNotifier {
-
   List<NoticiaModel> lista = [];
 
   final Firestore firestore = Firestore.instance;
 
-  NoticiaController(){
+  NoticiaController() {
     getNoticias();
   }
 
@@ -17,9 +16,11 @@ class NoticiaController extends ChangeNotifier {
   }
 
   Future<NoticiaModel> getNoticias() async {
-      final lista_noticia = await firestore.collection("noticias").getDocuments();
-      lista = lista_noticia.documents.map((e) => (NoticiaModel.fromDocument(e))).toList();
+    final lista_noticia = await firestore.collection("noticias").getDocuments();
+    lista = lista_noticia.documents
+        .map((e) => (NoticiaModel.fromDocument(e)))
+        .toList();
 
-      notifyListeners();
+    notifyListeners();
   }
 }
