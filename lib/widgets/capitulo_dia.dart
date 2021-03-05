@@ -7,11 +7,10 @@ class CapituloDia extends StatelessWidget {
       children: [
         Container(
           child: Text(
-            "'' Contudo, aos que o receberam, aos que creram em seu nome, deu-lhes o direito de se tornarem filhos de Deus''",
+            "Contudo, aos que o receberam, aos que creram em seu nome, deu-lhes o direito de se tornarem filhos de Deus.",
             style: TextStyle(
-              color: Colors.black38,
-              fontWeight: FontWeight.bold,
-              fontSize: 18,
+              color: Colors.black87,
+              fontSize: 15,
             ),
           ),
         ),

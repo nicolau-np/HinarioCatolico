@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
             ),
             Container(
               child: Padding(
-                padding: const EdgeInsets.fromLTRB(12, 2, 12, 3),
+                padding: const EdgeInsets.fromLTRB(14, 2, 0, 2),
                 child: CapituloDia(),
               ),
             ),
