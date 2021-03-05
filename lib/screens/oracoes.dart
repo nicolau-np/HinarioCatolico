@@ -9,9 +9,47 @@ class OracoesPage extends StatelessWidget {
         title: Text('Orações'),
       ),
       drawer: DrawerScreen(),
-      body: Center(
-        child: Text('heloo'),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Form(
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                    icon: Icon(Icons.search),
+                    hintText: 'Pesquisar...',
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                height: 525.0,
+                width: double.infinity,
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(30, 4, 30, 4),
+                  child: ListView(
+                    children: [_container()],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
+    );
+  }
+
+  _container() {
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(6),
+        color: Colors.black26,
+      ),
+      child: Text('hello'),
     );
   }
 }
