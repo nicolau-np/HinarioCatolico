@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class CardsOracoes extends StatelessWidget {
   final String title;
   final String description;
@@ -11,7 +12,9 @@ class CardsOracoes extends StatelessWidget {
       padding: const EdgeInsets.all(5.0),
       child: InkWell(
         onTap: () {
-          print('hello');
+          Navigator.of(context).pushNamed('/descricao_oracao', arguments: {
+            'title': this.title,
+          });
         },
         child: Container(
           height: 100,
