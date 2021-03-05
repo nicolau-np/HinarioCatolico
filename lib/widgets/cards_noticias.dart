@@ -36,7 +36,7 @@ class CardsNoticias extends StatelessWidget {
                     image: NetworkImage(noticiaController.lista[index].image),
                     height: 110.0,
                     width: double.infinity,
-                    fit: BoxFit.cover,
+                    fit: BoxFit.fill,
                   ),
                   Padding(
                     padding: EdgeInsets.all(4),
