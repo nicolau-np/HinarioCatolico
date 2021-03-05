@@ -3,6 +3,7 @@ import 'package:hinario_catolico/controllers/carousel_controller.dart';
 import 'package:hinario_catolico/models/carousel_model.dart';
 import 'package:hinario_catolico/screens/canticos.dart';
 import 'package:hinario_catolico/screens/configuracoes.dart';
+import 'package:hinario_catolico/screens/descricao_noticia.dart';
 import 'package:hinario_catolico/screens/home_page.dart';
 import 'package:hinario_catolico/screens/oracoes.dart';
 import 'package:hinario_catolico/screens/suporte.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
           '/canticos': (context) => CanticosPage(),
           '/configuracoes': (context) => ConfigPage(),
           '/suporte': (context) => SuportePage(),
+          '/descricao_noticia':(context)=>DescricaoNoticia(),
         },
       ),
     );
