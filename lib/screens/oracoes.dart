@@ -40,7 +40,7 @@ class OracoesPage extends StatelessWidget {
                       ),
                       CardsOracoes(
                         'Glória ao Pai',
-                        'Glória ao Pai e ao Filho',
+                        'Glória ao Pai e ao Filho...',
                       ),
                       CardsOracoes(
                         'À Vossa Proteção',
