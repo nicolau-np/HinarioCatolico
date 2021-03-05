@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hinario_catolico/controllers/noticia_controller.dart';
 import 'package:provider/provider.dart';
 
-class CardsWidget extends StatelessWidget {
+class CardsNoticias extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Consumer<NoticiaController>(builder: (__, noticiaController, _) {

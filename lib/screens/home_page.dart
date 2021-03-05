@@ -2,7 +2,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:hinario_catolico/widgets/capitulo_dia.dart';
-import 'package:hinario_catolico/widgets/cards.dart';
+import 'package:hinario_catolico/widgets/cards_noticias.dart';
 import 'package:hinario_catolico/widgets/carousel_widget.dart';
 import 'package:hinario_catolico/widgets/circle_button.dart';
 import 'package:hinario_catolico/widgets/drawer_screen.dart';
@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
               height: 250.0,
               width: double.infinity,
               color: Colors.white,
-              child: CardsWidget(),
+              child: CardsNoticias(),
             ),
             SizedBox(
               height: 10,
