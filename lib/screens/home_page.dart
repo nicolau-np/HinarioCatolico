@@ -1,6 +1,7 @@
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:hinario_catolico/widgets/capitulo_dia.dart';
 import 'package:hinario_catolico/widgets/cards.dart';
 import 'package:hinario_catolico/widgets/carousel_widget.dart';
 import 'package:hinario_catolico/widgets/circle_button.dart';
@@ -54,6 +55,12 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+             SizedBox(
+              height: 10,
+            ),
+            Container(
+              child: CapituloDia(),
+            ),
             SizedBox(
               height: 10,
             ),
@@ -75,6 +82,7 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+
             Container(
               width: double.infinity,
               child: Padding(
