@@ -27,9 +27,7 @@ class HomePage extends StatelessWidget {
               child: Text(
                 "Notícias",
                 style: TextStyle(
-                  color: Colors.black45,
-                  fontWeight: FontWeight.bold
-                ),
+                    color: Colors.black45, fontWeight: FontWeight.bold),
               ),
             ),
             Container(
@@ -81,7 +79,7 @@ class HomePage extends StatelessWidget {
             ),
             Container(
               child: Padding(
-                padding: const EdgeInsets.fromLTRB(14, 2, 0, 2),
+                padding: const EdgeInsets.fromLTRB(12.0, 4.0, 12.0, 4.0),
                 child: CapituloDia(),
               ),
             ),
