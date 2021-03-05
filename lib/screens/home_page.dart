@@ -5,6 +5,7 @@ import 'package:hinario_catolico/widgets/cards.dart';
 import 'package:hinario_catolico/widgets/carousel_widget.dart';
 import 'package:hinario_catolico/widgets/circle_button.dart';
 import 'package:hinario_catolico/widgets/drawer_screen.dart';
+import 'package:hinario_catolico/widgets/videoToday.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -68,11 +69,17 @@ class HomePage extends StatelessWidget {
                     '/oracoes',
                   ),
                   CircleButton(
-                    'Cânticos',
-                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDg-_okK1TsqtW0BX4XeqygY2ptMx96YPhkw&usqp=CAU',
-                    '/canticos'
-                  ),
+                      'Cânticos',
+                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDg-_okK1TsqtW0BX4XeqygY2ptMx96YPhkw&usqp=CAU',
+                      '/canticos'),
                 ],
+              ),
+            ),
+            Container(
+              width: double.infinity,
+              child: Padding(
+                padding: EdgeInsets.all(10),
+                child: VideoToday(),
               ),
             ),
           ],
