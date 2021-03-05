@@ -54,12 +54,19 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Container(
-              height: 250,
               width: double.infinity,
               color: Colors.white,
               child: Row(
-                children:[
-                  CircleButton(),
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  CircleButton(
+                    'Orações',
+                    'https://static.fnac-static.com/multimedia/Images/PT/NR/f6/3f/00/16374/1540-1.jpg',
+                  ),
+                  CircleButton(
+                    'Cânticos',
+                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDg-_okK1TsqtW0BX4XeqygY2ptMx96YPhkw&usqp=CAU',
+                  ),
                 ],
               ),
             ),
