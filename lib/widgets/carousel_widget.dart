@@ -29,10 +29,17 @@ class CarouselWidget extends StatelessWidget {
               print("clicou 1");
             },
             child: Image.network(
-                'https://img2.migalhas.uol.com.br/_MEDPROC_/https__img1.migalhas.uol.com.br__SL__gf_base__SL__empresas__SL__MIGA__SL__imagens__SL__2020__SL__10__SL__27__SL__4b0aea2f-b96d-44d1-91a3-f0596ef846f8.jpg._PROC_CP75.jpg',
+                'https://www.iol.pt/multimedia/oratvi/multimedia/imagem/id/5c6e567b0cf232f8cfbbefca/1024',
                 fit: BoxFit.cover),
           ),
-          
+          InkWell(
+            onTap: () {
+              print("clicou 1");
+            },
+            child: Image.network(
+                'https://miro.medium.com/max/1200/1*EiY8N0kZQXTbW8hn6WqjBw.jpeg',
+                fit: BoxFit.cover),
+          ),
         ],
       ),
     );

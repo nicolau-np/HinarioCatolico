@@ -18,14 +18,23 @@ class HomePage extends StatelessWidget {
           children: [
             CarouselWidget(),
             Container(
-              child: Text(
-                'fjd',
-                style: TextStyle(color: Colors.amber),
+              height: 100,
+              width: double.infinity,
+              color: Colors.red,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  
+                ],
               ),
             ),
           ],
         ),
       ),
     );
+  }
+
+  _card() {
+    
   }
 }
