@@ -19,8 +19,19 @@ class HomePage extends StatelessWidget {
       drawer: DrawerScreen(),
       body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CarouselWidget(),
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                "Notícias",
+                style: TextStyle(
+                  color: Colors.black45,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+            ),
             Container(
               height: 250.0,
               width: double.infinity,
@@ -55,11 +66,24 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-             SizedBox(
+            SizedBox(
               height: 10,
             ),
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                "Capítulo do Dia",
+                style: TextStyle(
+                  color: Colors.black45,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
             Container(
-              child: CapituloDia(),
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(12, 2, 12, 3),
+                child: CapituloDia(),
+              ),
             ),
             SizedBox(
               height: 10,
@@ -82,7 +106,16 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: Text(
+                "Multimédia",
+                style: TextStyle(
+                  color: Colors.black45,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
             Container(
               width: double.infinity,
               child: Padding(

@@ -7,16 +7,22 @@ class CapituloDia extends StatelessWidget {
       children: [
         Container(
           child: Text(
-            "« Sede, Santos com santo o vosso pai »",
+            "'' Contudo, aos que o receberam, aos que creram em seu nome, deu-lhes o direito de se tornarem filhos de Deus''",
             style: TextStyle(
               color: Colors.black38,
               fontWeight: FontWeight.bold,
-              fontSize: 20
+              fontSize: 18,
             ),
           ),
         ),
         Container(
-          child: Text("Salmos 68:19-20"),
+          child: Text(
+            "João 1:12",
+            style: TextStyle(
+              color: Colors.red,
+              fontSize: 12,
+            ),
+          ),
         ),
       ],
     );
