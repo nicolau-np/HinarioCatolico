@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hinario_catolico/controllers/carousel_controller.dart';
+import 'package:hinario_catolico/controllers/noticia_controller.dart';
 import 'package:hinario_catolico/models/carousel_model.dart';
+import 'package:hinario_catolico/models/noticia_model.dart';
 import 'package:hinario_catolico/screens/canticos.dart';
 import 'package:hinario_catolico/screens/configuracoes.dart';
 import 'package:hinario_catolico/screens/descricao_noticia.dart';
@@ -22,6 +24,8 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => CarouselController()),
         ChangeNotifierProvider(create: (_) => CarouselModel()),
+        ChangeNotifierProvider(create: (_) => NoticiaController()),
+        ChangeNotifierProvider(create: (_) => NoticiaModel()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -38,8 +42,8 @@ class MyApp extends StatelessWidget {
           '/canticos': (context) => CanticosPage(),
           '/configuracoes': (context) => ConfigPage(),
           '/suporte': (context) => SuportePage(),
-          '/descricao_noticia':(context)=>DescricaoNoticia(),
-          '/descricao_oracao':(context)=>DescricaoOracao(),
+          '/descricao_noticia': (context) => DescricaoNoticia(),
+          '/descricao_oracao': (context) => DescricaoOracao(),
         },
       ),
     );
