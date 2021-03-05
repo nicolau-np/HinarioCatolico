@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text('Hinário'),
       ),
@@ -22,6 +22,7 @@ class HomePage extends StatelessWidget {
             Container(
               height: 250.0,
               width: double.infinity,
+              color: Colors.white,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -52,12 +53,15 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                CircleButton(),
-                
-              ],
+            Container(
+              height: 250,
+              width: double.infinity,
+              color: Colors.white,
+              child: Row(
+                children:[
+                  CircleButton(),
+                ],
+              ),
             ),
           ],
         ),
