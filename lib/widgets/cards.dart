@@ -1,22 +1,74 @@
 import 'package:flutter/material.dart';
 
 class CardsWidget extends StatelessWidget {
+  final String image;
+  final String title;
+  final String description;
+  final String date;
+
+  CardsWidget(this.image, this.title, this.description, this.date);
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 1,
+            blurRadius: 7,
+            offset: Offset(0, 2), // changes position of shadow
+          ),
+        ],
       ),
       width: 200,
-      height: double.infinity,
+      height: 550,
       child: Padding(
-        padding: EdgeInsets.all(5),
+        padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image(image: NetworkImage('https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg'), height: 50,),
-            Text('hello2')
+            Image(
+              image: NetworkImage(this.image),
+              height: 110.0,
+              width: double.infinity,
+              fit: BoxFit.cover,
+            ),
+            Padding(
+              padding: EdgeInsets.all(4),
+              child: Text(
+                this.title,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15,
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(4),
+              child: Text(
+                this.description,
+                style: TextStyle(color: Colors.black38, fontSize: 12),
+              ),
+            ),
+            Padding(
+                padding: EdgeInsets.all(4),
+                child: Text(
+                  this.date,
+                  style: TextStyle(
+                    color: Colors.red,
+                    fontSize: 8,
+                  ),
+                )),
+            Center(
+              child: RaisedButton(
+                onPressed: () {},
+                child: Text("Ler mais"),
+                color: Colors.red,
+                textColor: Colors.white,
+              ),
+            )
           ],
         ),
       ),
