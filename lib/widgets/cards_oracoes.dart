@@ -61,6 +61,7 @@ class CardsOracoes extends StatelessWidget {
                         fontSize: 16,
                       ),
                     ),
+                    SizedBox(height: 5,),
                     Text(
                       this.description,
                       style: TextStyle(
@@ -69,7 +70,7 @@ class CardsOracoes extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 15,
+                      height: 10,
                     ),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,

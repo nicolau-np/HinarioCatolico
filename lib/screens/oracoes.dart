@@ -34,7 +34,7 @@ class OracoesPage extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(0, 4, 0, 4),
                   child: ListView(
                     children: [
-                      CardsOracoes('titulo','descricao',),
+                      CardsOracoes('Pai Nosso','Pai nosso que estais no ceus, santif...',),
                       
                     ],
                   ),
