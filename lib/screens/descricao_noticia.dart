@@ -37,7 +37,9 @@ class DescricaoNoticia extends StatelessWidget {
             ),
             child: Padding(
               padding: const EdgeInsets.all(10),
-              child: Text(noticia.bDescription),
+              child: Expanded(
+                child: Text(noticia.bDescription),
+              ),
             ),
           ),
         ],

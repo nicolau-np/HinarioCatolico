@@ -60,12 +60,14 @@ class DescricaoOracao extends StatelessWidget {
               ),
               child: Padding(
                 padding: const EdgeInsets.all(15),
-                child: Text(
-                  oracao.bDescription,
-                  style: TextStyle(
-                    fontSize: 16,
+                child: Expanded(
+                  child: Text(
+                    oracao.bDescription,
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                    textAlign: TextAlign.justify,
                   ),
-                  textAlign: TextAlign.justify,
                 ),
               ),
             ),

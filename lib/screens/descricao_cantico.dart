@@ -35,7 +35,6 @@ class DescricaoCantico extends StatelessWidget {
                       Icons.copy,
                       color: Colors.red,
                     ),
-                    
                   ),
                   SizedBox(
                     width: 20,
@@ -45,7 +44,8 @@ class DescricaoCantico extends StatelessWidget {
                     child: Icon(
                       Icons.play_arrow,
                       color: Colors.red,
-                    ),),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -70,12 +70,14 @@ class DescricaoCantico extends StatelessWidget {
               ),
               child: Padding(
                 padding: const EdgeInsets.all(15),
-                child: Text(
-                  cantico.bDescription,
-                  style: TextStyle(
-                    fontSize: 16,
+                child: Expanded(
+                  child: Text(
+                    cantico.bDescription,
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                    textAlign: TextAlign.justify,
                   ),
-                  textAlign: TextAlign.justify,
                 ),
               ),
             ),
