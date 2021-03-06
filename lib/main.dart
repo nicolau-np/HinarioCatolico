@@ -11,6 +11,7 @@ import 'package:hinario_catolico/models/noticia_model.dart';
 import 'package:hinario_catolico/models/oracao_model.dart';
 import 'package:hinario_catolico/screens/canticos.dart';
 import 'package:hinario_catolico/screens/configuracoes.dart';
+import 'package:hinario_catolico/screens/descricao_cantico.dart';
 import 'package:hinario_catolico/screens/descricao_noticia.dart';
 import 'package:hinario_catolico/screens/descricao_oracao.dart';
 import 'package:hinario_catolico/screens/home_page.dart';
@@ -56,6 +57,7 @@ class MyApp extends StatelessWidget {
           '/suporte': (context) => SuportePage(),
           '/descricao_noticia': (context) => DescricaoNoticia(),
           '/descricao_oracao': (context) => DescricaoOracao(),
+          '/descricao_cantico':(context)=>DescricaoCantico(),
         },
       ),
     );
