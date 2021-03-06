@@ -41,17 +41,16 @@ class CardsNoticias extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.all(4),
                       child: Text(
-                          noticiaController.lista[index].title,
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 15,
-                          ),
+                        noticiaController.lista[index].title,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
                         ),
-                      
+                      ),
                     ),
-                    Padding(
-                      padding: EdgeInsets.all(4),
-                      child: Expanded(
+                    Expanded(
+                                          child: Padding(
+                        padding: EdgeInsets.all(4),
                         child: Text(
                           noticiaController.lista[index].pDescription,
                           style: TextStyle(color: Colors.black38, fontSize: 12),
@@ -59,16 +58,15 @@ class CardsNoticias extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                        padding: EdgeInsets.all(4),
-                        child: Expanded(
-                          child: Text(
-                            noticiaController.lista[index].data,
-                            style: TextStyle(
-                              color: Colors.red,
-                              fontSize: 8,
-                            ),
-                          ),
-                        )),
+                      padding: EdgeInsets.all(4),
+                      child: Text(
+                        noticiaController.lista[index].data,
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 8,
+                        ),
+                      ),
+                    ),
                     Center(
                       child: RaisedButton(
                         onPressed: () {
