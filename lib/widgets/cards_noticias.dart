@@ -40,15 +40,14 @@ class CardsNoticias extends StatelessWidget {
                     ),
                     Padding(
                       padding: EdgeInsets.all(4),
-                      child: Expanded(
-                        child: Text(
+                      child: Text(
                           noticiaController.lista[index].title,
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 15,
                           ),
                         ),
-                      ),
+                      
                     ),
                     Padding(
                       padding: EdgeInsets.all(4),
