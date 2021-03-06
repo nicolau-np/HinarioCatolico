@@ -35,7 +35,17 @@ class DescricaoCantico extends StatelessWidget {
                       Icons.copy,
                       color: Colors.red,
                     ),
-                  )
+                    
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  InkWell(
+                    onTap: () {},
+                    child: Icon(
+                      Icons.play_arrow,
+                      color: Colors.red,
+                    ),),
                 ],
               ),
             ),

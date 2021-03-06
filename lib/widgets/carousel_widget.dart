@@ -6,8 +6,8 @@ import 'package:provider/provider.dart';
 class CarouselWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Consumer<CarouselController>(builder: (__, carouselController,_){
-      return  SizedBox(
+    return Consumer<CarouselController>(builder: (__, carouselController, _) {
+      return SizedBox(
         height: 170.0,
         width: double.infinity,
         child: Carousel(
@@ -18,22 +18,19 @@ class CarouselWidget extends StatelessWidget {
           dotBgColor: Colors.black38,
           dotVerticalPadding: 0.0,
           dotPosition: DotPosition.bottomRight,
-          images: carouselController.lista.map((e) {
-            return Builder(builder: (BuildContext context){
-              return InkWell(
-                onTap: () {
-                  print("clicou 1");
-                },
-                child: Image.network(
-                    e.imagem,
-                    fit: BoxFit.fill,),
-              );
-            });
-          }).toList(),
+          images: [
+            NetworkImage(
+              'https://cdn.jornalgrandebahia.com.br/2017/12/Orando-rezando.jpg',
+            ),
+            NetworkImage(
+              'https://www.cathopic.com/images/1080p/1981d56e5267d4c4863d0c6925db08c5.jpg',
+            ),
+            NetworkImage(
+              'https://st4.depositphotos.com/18349226/20255/i/600/depositphotos_202550970-stock-photo-parent-children-praying-bed-family.jpg',
+            ),
+          ],
         ),
       );
     });
   }
-
-
 }
