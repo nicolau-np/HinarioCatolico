@@ -45,12 +45,14 @@ class SuportePage extends StatelessWidget {
                       SizedBox(
                         height: 5,
                       ),
-                      Text(
-                        'No hinário encontramos uma riqueza de conteúdo tanto musical quanto cultural. Ali podem ser encontradas melodias judaicas, alemãs, irlandesas e etc. Também se podem verificar autores desde Bethoveen a Bill Gather. Isso sem falar na riqueza de suas letras e melodias que, quando bem produzidas e cantadas com entendimento, nos fazem experimentar um pouco da realidade celestial aqui na Terra.',
-                        style: TextStyle(
-                          color: Colors.black87,
+                      Expanded(
+                        child: Text(
+                          'No hinário encontramos uma riqueza de conteúdo tanto musical quanto cultural. Ali podem ser encontradas melodias judaicas, alemãs, irlandesas e etc. Também se podem verificar autores desde Bethoveen a Bill Gather. Isso sem falar na riqueza de suas letras e melodias que, quando bem produzidas e cantadas com entendimento, nos fazem experimentar um pouco da realidade celestial aqui na Terra.',
+                          style: TextStyle(
+                            color: Colors.black87,
+                          ),
+                          textAlign: TextAlign.justify,
                         ),
-                        textAlign: TextAlign.justify,
                       ),
                     ],
                   ),
@@ -62,7 +64,6 @@ class SuportePage extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
-                
               ),
               child: Column(
                 children: [
@@ -74,7 +75,6 @@ class SuportePage extends StatelessWidget {
                         'https://z-m-scontent.flad4-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/56158466_1613664102111943_966268719913238528_o.jpg?_nc_cat=100&ccb=1-3&_nc_sid=85a577&efg=eyJpIjoibyJ9&_nc_eui2=AeFQihzzsDx56PjaMwunv7xkaSQdNJK7lqhpJB00kruWqP9tqawl7mtHPKRdgtv0i3ube_BVXu1GKmCe23YpwJp0&_nc_ohc=JQP69CeqsdsAX_az4A2&_nc_ad=z-m&_nc_cid=1390&_nc_eh=dc7e7cf94f7953396c46ab61180c3093&_nc_rml=0&_nc_ht=z-m-scontent.flad4-1.fna&tp=14&oh=98a60d2cf94c2db0a43f3da227b9e1c7&oe=60689451',
                       ),
                       foregroundColor: Colors.white,
-                      
                     ),
                   ),
                   SizedBox(

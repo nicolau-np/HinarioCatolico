@@ -52,50 +52,51 @@ class CardsOracoes extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             SizedBox(
-                              height: 13,
-                            ),
-                            Text(
-                              oracaoController.lista[index].title,
-                              style: TextStyle(
-                                color: Colors.red[200],
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
-                              ),
-                            ),
-                            SizedBox(
                               height: 5,
                             ),
-                            Text(
-                              oracaoController.lista[index].pDescription,
-                              style: TextStyle(
-                                color: Colors.black87,
-                                fontSize: 12,
+                            Expanded(
+                              child: Text(
+                                oracaoController.lista[index].title,
+                                style: TextStyle(
+                                  color: Colors.red[200],
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                ),
                               ),
                             ),
-                            SizedBox(
-                              height: 10,
+                            Expanded(
+                              child: Text(
+                                oracaoController.lista[index].pDescription,
+                                style: TextStyle(
+                                  color: Colors.black87,
+                                  fontSize: 12,
+                                ),
+                              ),
                             ),
-                            Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                InkWell(
-                                  onTap: () {},
-                                  child: Icon(
-                                    Icons.share,
-                                    color: Colors.red,
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(0, 0, 0, 7),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  InkWell(
+                                    onTap: () {},
+                                    child: Icon(
+                                      Icons.share,
+                                      color: Colors.red,
+                                    ),
                                   ),
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                InkWell(
-                                  onTap: () {},
-                                  child: Icon(
-                                    Icons.copy,
-                                    color: Colors.red,
+                                  SizedBox(
+                                    width: 20,
                                   ),
-                                )
-                              ],
+                                  InkWell(
+                                    onTap: () {},
+                                    child: Icon(
+                                      Icons.copy,
+                                      color: Colors.red,
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ],
                         )
