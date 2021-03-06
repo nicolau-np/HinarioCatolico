@@ -17,7 +17,7 @@ class SuportePage extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
-                  color: Colors.amber,
+                  color: Colors.white,
                   boxShadow: [
                     BoxShadow(
                       color: Colors.grey.withOpacity(0.5),
@@ -48,7 +48,7 @@ class SuportePage extends StatelessWidget {
                       Text(
                         'No hinário encontramos uma riqueza de conteúdo tanto musical quanto cultural. Ali podem ser encontradas melodias judaicas, alemãs, irlandesas e etc. Também se podem verificar autores desde Bethoveen a Bill Gather. Isso sem falar na riqueza de suas letras e melodias que, quando bem produzidas e cantadas com entendimento, nos fazem experimentar um pouco da realidade celestial aqui na Terra.',
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.black87,
                         ),
                         textAlign: TextAlign.justify,
                       ),
