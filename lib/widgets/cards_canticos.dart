@@ -41,7 +41,7 @@ class CardsCanticos extends StatelessWidget {
                           height: double.infinity,
                           width: 100,
                           child: Image.network(
-                            'https://www.pinclipart.com/picdir/middle/206-2069902_audio-mic-microphone-sound-voice-icon-voice-vector.png',
+                            'https://cdn.pixabay.com/photo/2017/01/09/20/11/music-1967480_960_720.png',
                             fit: BoxFit.cover,
                           ),
                         ),

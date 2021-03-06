@@ -28,7 +28,7 @@ class DrawerScreen extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.favorite),
+            leading: Icon(Icons.book),
             title: Text("Orações"),
             onTap: () {
               Navigator.of(context).pushNamed('/oracoes');
