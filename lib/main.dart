@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:hinario_catolico/controllers/capitulo_controller.dart';
 import 'package:hinario_catolico/controllers/carousel_controller.dart';
 import 'package:hinario_catolico/controllers/noticia_controller.dart';
 import 'package:hinario_catolico/controllers/oracao_controller.dart';
+import 'package:hinario_catolico/models/capitulo_model.dart';
 import 'package:hinario_catolico/models/carousel_model.dart';
 import 'package:hinario_catolico/models/noticia_model.dart';
 import 'package:hinario_catolico/models/oracao_model.dart';
@@ -30,6 +32,8 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => NoticiaModel()),
         ChangeNotifierProvider(create: (_) => OracaoController()),
         ChangeNotifierProvider(create: (_) => OracaoModel()),
+        ChangeNotifierProvider(create: (_)=>CapituloModel()),
+        ChangeNotifierProvider(create: (_)=>CapituloController()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
