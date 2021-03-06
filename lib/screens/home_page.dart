@@ -50,6 +50,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
             Container(
+              height: 100.0,
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(12.0, 4.0, 12.0, 4.0),
                 child: CapituloDia(),
